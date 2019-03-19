@@ -1,12 +1,13 @@
-import Vue from 'vue'
-import './plugins/vuetify'
-import App from './App.vue'
-import router from './router'
-import './registerServiceWorker'
+// jshint esversion: 6
+import Vue from 'vue';
+import './plugins/vuetify';
+import App from './App.vue';
+import router from './router';
+import './registerServiceWorker';
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
 new Vue({
   router,
   render: h => h(App)
-}).$mount('#app')
+}).$mount('#app');

@@ -1,13 +1,72 @@
 <template>
-  <HelloWorld />
+  <div class="text-xs-center">
+    <v-carousel height="300">
+    <v-carousel-item
+      v-for="(item,i) in items"
+      :key="i"
+      :src="item.src"
+    ></v-carousel-item>
+  </v-carousel>
+    <v-card>
+      <v-card-title primary-title>
+        <h2 style="margin: auto" class="headline">DO IT YOURSELF!</h2>
+      </v-card-title>
+      <v-divider></v-divider>
+      <v-card-text>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed architecto repudiandae, aperiam amet quod, error optio ipsam unde praesentium magni explicabo sequi ducimus veritatis totam, aliquid nihil soluta tenetur similique.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis doloribus ipsum, architecto ipsa pariatur dolor, enim totam alias harum praesentium nesciunt culpa iusto aut expedita fugiat dolorum provident a nulla.</p>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic quibusdam esse repellendus, voluptate mollitia velit magnam excepturi reprehenderit molestias ipsam omnis, at quae sint quo nesciunt delectus ullam, maxime similique.</p>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, esse saepe molestiae, sunt exercitationem, officiis illum fuga natus possimus enim numquam tempora aliquam. Officiis ipsa libero soluta minus molestias doloribus.</p>
+      </v-card-text>
+    </v-card>
+    <v-divider></v-divider>
+    <div class="text-xs-center">
+      <v-alert type="info" :value="true">
+        <h2>Disclaimer</h2>
+        <v-divider></v-divider>
+        <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, asperiores aut earum eveniet eos placeat unde error excepturi, alias blanditiis sint minima enim reiciendis quisquam id beatae. Magni, aspernatur porro.
+      </p>
+      </v-alert>
+      <v-divider></v-divider>
+      <v-alert type="warning" :value="true">
+        <h2>Safety</h2>
+        <v-divider></v-divider>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure id saepe doloribus voluptatibus fugiat adipisci necessitatibus dolorum sit fugit tempora, ut quaerat, laboriosam voluptates vitae deserunt? Deleniti debitis placeat enim.
+      </p>
+      </v-alert>
+    </div>
+    <scroll-top/>
+  </div>
 </template>
 
 <script>
-  import HelloWorld from '../components/HelloWorld'
-
-  export default {
-    components: {
-      HelloWorld
+import ScrollTop from '../components/ScrollTop';
+export default {
+  name: 'Home',
+  components: {
+    ScrollTop
+  },
+  data() {
+    return {
+      items: [
+          {
+            src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg'
+          },
+          {
+            src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg'
+          },
+          {
+            src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg'
+          },
+          {
+            src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg'
+          }
+        ]
     }
-  }
+  },
+};
 </script>
