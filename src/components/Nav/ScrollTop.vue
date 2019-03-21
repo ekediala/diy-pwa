@@ -14,7 +14,7 @@
 </template>
 
 <script>
-require('../scroll.js');
+require('../../scroll.js');
 export default {
     name: 'ScrollTop',
     methods: {

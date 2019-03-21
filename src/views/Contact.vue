@@ -99,14 +99,13 @@ export default {
 
         emailjs
           .send("gmail", "template_mGoqNyJv", templateParams)
-          .then(response => {
+          .then(() => {
             alert("Message sent. We'll get back to you shortly");
             this.loading = false;
           })
-          .catch(error => {
+          .catch(() => {
             alert("Message send failed. Please try again");
             this.loading = false;
-            console.log(error);
           });
       }
       return false;

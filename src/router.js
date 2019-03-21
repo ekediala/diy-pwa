@@ -33,6 +33,51 @@ export default new Router({
     },
 
     {
+      path: '/liquid-soap-making',
+      name: 'liquid-soap',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import( /* webpackChunkName: "about" */ './views/LiquidSoap.vue')
+    },
+
+    {
+      path: '/whitener-making',
+      name: 'whitener',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import( /* webpackChunkName: "about" */ './views/Whitener.vue')
+    },
+
+    {
+      path: '/car-wash-liquid',
+      name: 'car-wash',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import( /* webpackChunkName: "about" */ './views/CarWash.vue')
+    },
+
+    {
+      path: '/alcohol-air-freshener',
+      name: 'alcohol-based',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import( /* webpackChunkName: "about" */ './views/AlcoholBasedAirFreshener.vue')
+    },
+
+    {
+      path: '/water-air-freshener',
+      name: 'water-based',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import( /* webpackChunkName: "about" */ './views/WaterBasedAirFreshener.vue')
+    },
+
+    {
       path: '*',
       name: 'error',
       component: () => import(/* webpackChunkName: "about" */ './views/NotFound.vue')

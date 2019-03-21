@@ -1,12 +1,8 @@
 <template>
   <div class="text-xs-center">
     <v-carousel height="300">
-    <v-carousel-item
-      v-for="(item,i) in items"
-      :key="i"
-      :src="item.src"
-    ></v-carousel-item>
-  </v-carousel>
+      <v-carousel-item v-for="(item,i) in items" :key="i" :src="item.src"></v-carousel-item>
+    </v-carousel>
     <v-card>
       <v-card-title primary-title>
         <h2 style="margin: auto" class="headline">DO IT YOURSELF!</h2>
@@ -22,51 +18,50 @@
       </v-card-text>
     </v-card>
     <v-divider></v-divider>
-    <div class="text-xs-center">
+    <div id="diy-alert" class="text-xs-center">
       <v-alert type="info" :value="true">
         <h2>Disclaimer</h2>
         <v-divider></v-divider>
         <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, asperiores aut earum eveniet eos placeat unde error excepturi, alias blanditiis sint minima enim reiciendis quisquam id beatae. Magni, aspernatur porro.
-      </p>
+          By proceeding with the procedures below, you agree you are responsible for your safety,
+          and also that any loss / liability incurred is completely your responsibility. We do
+          not offer any guarantees on the correctness of the procedures.
+        </p>
       </v-alert>
       <v-divider></v-divider>
       <v-alert type="warning" :value="true">
         <h2>Safety</h2>
-        <v-divider></v-divider>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure id saepe doloribus voluptatibus fugiat adipisci necessitatibus dolorum sit fugit tempora, ut quaerat, laboriosam voluptates vitae deserunt? Deleniti debitis placeat enim.
-      </p>
+        <p>
+          <b>
+            <em>*Ensure to wear protective equipments.</em>
+          </b>
+        </p>
+        <p>You are dealing with chemicals; wear rubber gloves, nose guards, and lab coats. Ensure your workspace is safe for you and your environment.</p>
       </v-alert>
     </div>
-    <scroll-top/>
   </div>
 </template>
 
 <script>
-import ScrollTop from '../components/ScrollTop';
 export default {
-  name: 'Home',
-  components: {
-    ScrollTop
-  },
+  name: "Home",
   data() {
     return {
       items: [
-          {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg'
-          },
-          {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg'
-          },
-          {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg'
-          },
-          {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg'
-          }
-        ]
-    }
-  },
+        {
+          src: "https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg"
+        },
+        {
+          src: "https://cdn.vuetifyjs.com/images/carousel/sky.jpg"
+        },
+        {
+          src: "https://cdn.vuetifyjs.com/images/carousel/bird.jpg"
+        },
+        {
+          src: "https://cdn.vuetifyjs.com/images/carousel/planet.jpg"
+        }
+      ]
+    };
+  }
 };
 </script>
