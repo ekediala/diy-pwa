@@ -2,7 +2,7 @@
   <recipe recipe="Car Wash Liquid Making">
     <template v-slot:image>
       <div>
-        <img rel="preload" as="image" src="../assets/img/car-wash.jpg" alt="Car wash recipe image">
+        <img src="../assets/img/car-wash.jpg" alt="Car wash recipe image">
       </div>
     </template>
     <template v-slot:credits>

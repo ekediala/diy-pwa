@@ -3,8 +3,6 @@
     <template v-slot:image>
       <div>
         <img
-          rel="preload"
-          as="image"
           src="../assets/img/soap-dispenser-2337697_1920.jpg"
           alt="Liquid Soap making"
         >

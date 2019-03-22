@@ -2,7 +2,7 @@
   <recipe recipe="Disinfectant Making">
     <template v-slot:image>
       <div>
-        <img rel="preload" as="image" alt="Disinfectant Image" src="../assets/img/disinfectant.jpg">
+        <img alt="Disinfectant Image" src="../assets/img/disinfectant.jpg">
       </div>
     </template>
     <template v-slot:credits>

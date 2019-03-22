@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-card class="text-xs-center diy">
-      <v-img rel="preload" as="image" contain height="250" src="https://picsum.photos/300"></v-img>
+      <v-img contain height="250" src="https://picsum.photos/300"></v-img>
 
       <v-divider></v-divider>
 

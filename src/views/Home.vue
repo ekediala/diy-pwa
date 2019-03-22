@@ -1,7 +1,7 @@
 <template>
   <div class="text-xs-center">
     <v-carousel height="300">
-      <v-carousel-item rel="preload" as="image" v-for="(item,i) in items" :key="i" :src="item.src"></v-carousel-item>
+      <v-carousel-item v-for="(item,i) in items" :key="i" :src="item.src"></v-carousel-item>
     </v-carousel>
     <v-card>
       <v-card-title primary-title>

@@ -2,7 +2,7 @@
   <recipe recipe="Perfume Making">
     <template v-slot:image>
       <div>
-        <img rel="preload" as="image" src="../assets/img/perfume.png" alt="Perfume Image">
+        <img src="../assets/img/perfume.png" alt="Perfume Image">
       </div>
     </template>
     <template v-slot:credits>

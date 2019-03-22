@@ -2,7 +2,7 @@
   <recipe recipe="Tile Cleaner Making">
     <template v-slot:image>
       <div>
-        <img rel="preload" as="image" src="../assets/img/tile-cleaner.png" alt="Tile Cleaner Image">
+        <img src="../assets/img/tile-cleaner.png" alt="Tile Cleaner Image">
       </div>
     </template>
     <template v-slot:credits>

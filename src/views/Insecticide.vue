@@ -2,7 +2,7 @@
   <recipe recipe="Insecticide Making">
     <template v-slot:image>
       <div>
-        <img rel="preload" as="image" src="../assets/img/insecticide.png" alt>
+        <img src="../assets/img/insecticide.png" alt>
       </div>
     </template>
     <template v-slot:credits>

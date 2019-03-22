@@ -2,12 +2,7 @@
   <recipe recipe="Washing Powder Detergent Making">
     <template v-slot:image>
       <div>
-        <img
-          rel="preload"
-          as="image"
-          src="../assets/img/detergent.jpg"
-          alt="Detergent Making Image"
-        >
+        <img src="../assets/img/detergent.jpg" alt="Detergent Making Image">
       </div>
     </template>
     <template v-slot:credits>

@@ -3,8 +3,6 @@
     <template v-slot:image>
       <div>
         <img
-          rel="preload"
-          as="image"
           src="../assets/img/bleach-147520_1280.png"
           alt="Bleach Making image"
         >

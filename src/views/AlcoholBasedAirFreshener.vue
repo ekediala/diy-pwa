@@ -2,11 +2,7 @@
   <recipe recipe="Alcohol Based Air freshener.">
     <template v-slot:image>
       <div>
-        <img
-          rel="preload" as="image"
-          src="../assets/img/air-freshener.jpg"
-          alt="Air freshener image."
-        >
+        <img src="../assets/img/air-freshener.jpg" alt="Air freshener image.">
       </div>
     </template>
     <template v-slot:credits>
