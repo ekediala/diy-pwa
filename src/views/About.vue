@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-card class="text-xs-center diy">
-      <v-img contain height="250" src="https://picsum.photos/300"></v-img>
+      <v-img contain height="250" :src="require('../assets/img/about.jpg')"></v-img>
 
       <v-divider></v-divider>
 
@@ -14,9 +14,32 @@
       <v-divider></v-divider>
 
       <v-card-text>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi nulla id ipsam esse. Omnis ipsum inventore exercitationem voluptatem tempora nobis at quo blanditiis, neque quam ullam dignissimos libero nulla impedit!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi nulla id ipsam esse. Omnis ipsum inventore exercitationem voluptatem tempora nobis at quo blanditiis, neque quam ullam dignissimos libero nulla impedit!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi nulla id ipsam esse. Omnis ipsum inventore exercitationem voluptatem tempora nobis at quo blanditiis, neque quam ullam dignissimos libero nulla impedit!</p>
+        <p>Hey guys, my name is Eke Enyinnaya Diala.</p>
+        <p>I am a web / hybrid mobile app developer.</p>
+        <p>This is one of my projects.</p>
+        <p>It was built with Vue and Vuetify mainly.</p>
+        <p>The information contained in any project of mine is free to use in whatever
+          way you deem necessary (I hope you choose to do good with them).
+        </p>
+
+        <p>
+          I am starting a blog with my friend (Zenas Ubere) soon.</p>
+          <p>There I will share the knowledge gained from each project
+            and he will do what he likes to do: write.
+            </p>
+         <p> The source code will be available to download for free of course.
+        </p>
+
+        <p>
+          I hope this serves a purpose for you.
+        </p>
+
+        <p>Below are my social media handles.
+        </p>
+
+        <p>Sorry, as above so below.</p>
+
+        <p>Have fun.</p>
         <v-divider></v-divider>
         <div>
           <h3>Social</h3>

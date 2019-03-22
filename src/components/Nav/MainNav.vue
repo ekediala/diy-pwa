@@ -4,7 +4,7 @@
       <routes @toggleMenu="toggleMenu"/>
     </v-navigation-drawer>
 
-    <v-toolbar color="primary darken-1" scroll-off-screen app>
+    <v-toolbar scroll-off-screen app>
       <v-toolbar-side-icon @click.stop="toggleMenu"></v-toolbar-side-icon>
 
       <v-toolbar-title>DIY</v-toolbar-title>

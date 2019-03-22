@@ -24,7 +24,7 @@
         <v-divider></v-divider>
         <p>
           By proceeding with the procedures below, you agree you are responsible for your safety,
-          and also that any loss / liability incurred is completely your responsibility. We do
+          and also, that any loss / liability incurred is completely your responsibility. We do
           not offer any guarantees on the correctness of the procedures.
         </p>
       </v-alert>
