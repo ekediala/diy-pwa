@@ -2,7 +2,12 @@
   <recipe recipe="Bleach Making">
     <template v-slot:image>
       <div>
-        <img src="../assets/img/bleach-147520_1280.png" alt="Bleach Making image">
+        <img
+          rel="preload"
+          as="image"
+          src="../assets/img/bleach-147520_1280.png"
+          alt="Bleach Making image"
+        >
       </div>
     </template>
 

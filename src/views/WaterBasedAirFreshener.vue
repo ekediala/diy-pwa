@@ -2,7 +2,7 @@
   <recipe recipe="Water Based Air freshener.">
     <template v-slot:image>
       <div>
-        <img src="../assets/img/air-freshener.jpg" alt="Air freshener image.">
+        <img rel="preload" as="image" src="../assets/img/air-freshener.jpg" alt="Air freshener image.">
       </div>
     </template>
     <template v-slot:credits>

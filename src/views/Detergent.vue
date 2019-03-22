@@ -2,7 +2,12 @@
   <recipe recipe="Washing Powder Detergent Making">
     <template v-slot:image>
       <div>
-        <img src="../assets/img/detergent.jpg" alt="Detergent Making Image">
+        <img
+          rel="preload"
+          as="image"
+          src="../assets/img/detergent.jpg"
+          alt="Detergent Making Image"
+        >
       </div>
     </template>
     <template v-slot:credits>
@@ -50,33 +55,15 @@
     <template v-slot:procedure>
       <div>
         <procedure-list>
-          <procedure>
-            Dilute the stated amount of caustic soda in water.
-          </procedure>
-          <procedure>
-            Bleach PKO, mix it with color, and add to mixture above.
-          </procedure>
-          <procedure>
-            Add light ash.
-          </procedure>
-          <procedure>
-            Add hydrogen per oxide.
-          </procedure>
-          <procedure>
-            Add fragrance.
-          </procedure>
-          <procedure>
-            Stir mixture.
-          </procedure>
-          <procedure>
-            Dry mixture under the sun.
-          </procedure>
-          <procedure>
-            Grind the resulting solid into powder.
-          </procedure>
-          <procedure>
-            That's it! You can do your laundry now, your excuses have been rendered invalid.
-          </procedure>
+          <procedure>Dilute the stated amount of caustic soda in water.</procedure>
+          <procedure>Bleach PKO, mix it with color, and add to mixture above.</procedure>
+          <procedure>Add light ash.</procedure>
+          <procedure>Add hydrogen per oxide.</procedure>
+          <procedure>Add fragrance.</procedure>
+          <procedure>Stir mixture.</procedure>
+          <procedure>Dry mixture under the sun.</procedure>
+          <procedure>Grind the resulting solid into powder.</procedure>
+          <procedure>That's it! You can do your laundry now, your excuses have been rendered invalid.</procedure>
         </procedure-list>
       </div>
     </template>
