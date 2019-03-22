@@ -8,11 +8,15 @@
     </template>
 
     <template v-slot:ingredients>
-      <div></div>
+      <div>
+        <ingredients></ingredients>
+      </div>
     </template>
 
     <template v-slot:precaution>
-      <div></div>
+      <div>
+        <precaution></precaution>
+      </div>
     </template>
 
     <template v-slot:procedure>

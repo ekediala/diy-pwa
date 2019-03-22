@@ -7,13 +7,19 @@
       <v-list-tile-title>
         <slot/>&nbsp;of Alcohol.
       </v-list-tile-title>
-      <v-list-tile-sub-title>Base Ingredient.</v-list-tile-sub-title>
+      <v-list-tile-sub-title>
+        <div v-if="type">
+          ({{ type }})
+        </div>
+        Base Ingredient.
+        </v-list-tile-sub-title>
     </v-list-tile-content>
   </v-list-tile>
 </template>
 
 <script>
 export default {
-    name: 'MentholCrystal'
+    name: 'MentholCrystal',
+    props: ['type'],
 }
 </script>

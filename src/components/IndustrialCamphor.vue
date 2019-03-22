@@ -7,7 +7,7 @@
       <v-list-tile-title>Industrial Camphor.</v-list-tile-title>
       <v-list-tile-sub-title>
         <slot/>
-        <div>Minting Fragrance.</div>
+        <div>Odour retainer.</div>
       </v-list-tile-sub-title>
     </v-list-tile-content>
   </v-list-tile>

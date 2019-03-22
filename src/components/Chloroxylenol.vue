@@ -5,13 +5,13 @@
     </v-list-tile-avatar>
     <v-list-tile-content>
       <v-list-tile-title>
-        <slot/>&nbsp;of Preserver.
+        <slot/>&nbsp;of PCMX.
       </v-list-tile-title>
       <v-list-tile-sub-title>
         <div>
-        (tablespoon)
+          (Chloroxylenol.)
         </div>
-        Preservative.
+        Antiseptic Disinfectant.
         </v-list-tile-sub-title>
     </v-list-tile-content>
   </v-list-tile>
@@ -19,6 +19,6 @@
 
 <script>
 export default {
-  name: "Preserver"
+  name: "CarbolicAcid"
 };
 </script>

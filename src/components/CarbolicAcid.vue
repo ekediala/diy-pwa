@@ -5,13 +5,11 @@
     </v-list-tile-avatar>
     <v-list-tile-content>
       <v-list-tile-title>
-        <slot/>&nbsp;of Preserver.
+        <slot/>&nbsp;of C. A.
       </v-list-tile-title>
       <v-list-tile-sub-title>
-        <div>
-        (tablespoon)
-        </div>
-        Preservative.
+        <div>(Carbolic acid)</div>
+        Anti microbial agent (Germ killer).
         </v-list-tile-sub-title>
     </v-list-tile-content>
   </v-list-tile>
@@ -19,6 +17,6 @@
 
 <script>
 export default {
-  name: "Preserver"
+  name: "CarbolicAcid"
 };
 </script>

@@ -7,7 +7,10 @@
       <v-list-tile-title>
         <slot/>&nbsp;of S. A.
       </v-list-tile-title>
-      <v-list-tile-sub-title>Sulphonic acid is a major foaming agent.</v-list-tile-sub-title>
+      <v-list-tile-sub-title>
+        <div>(Sulphonic acid)</div>
+        Major foaming agent.
+      </v-list-tile-sub-title>
     </v-list-tile-content>
   </v-list-tile>
 </template>

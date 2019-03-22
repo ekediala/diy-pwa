@@ -14,6 +14,17 @@ export default new Router({
       name: 'home',
       component: Home
     },
+
+    {
+      path: '/index',
+      redirect: '/'
+    },
+
+     {
+       path: '/home',
+       redirect: '/'
+     },
+
     {
       path: '/about',
       name: 'about',
@@ -75,6 +86,50 @@ export default new Router({
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import( /* webpackChunkName: "about" */ './views/WaterBasedAirFreshener.vue')
+    },
+    {
+      path: '/disinfectant-making',
+      name: 'disinfectant',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import( /* webpackChunkName: "about" */ './views/Disinfectant.vue')
+    },
+
+    {
+      path: '/perfume-making',
+      name: 'perfume',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import( /* webpackChunkName: "about" */ './views/Perfume.vue')
+    },
+
+    {
+      path: '/tile-cleaner-making',
+      name: 'tile-cleaner',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import( /* webpackChunkName: "about" */ './views/TileCleaner.vue')
+    },
+
+    {
+      path: '/insecticide-making',
+      name: 'insecticide',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import( /* webpackChunkName: "about" */ './views/Insecticide.vue')
+    },
+
+    {
+      path: '/detergent-making',
+      name: 'detergent',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import( /* webpackChunkName: "about" */ './views/Detergent.vue')
     },
 
     {

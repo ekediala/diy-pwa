@@ -18,7 +18,7 @@
           <industrial-camphor>1/2 tablespoon</industrial-camphor>
           <fragrance types="5"/>
           <glycerine>20 ml</glycerine>
-          <preserver>1/2 tablespoon</preserver>
+          <preserver>1/2 spoon</preserver>
           <booster>20 ml</booster>
           <color/>
         </ingredients>

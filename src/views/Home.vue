@@ -31,12 +31,25 @@
       <v-divider></v-divider>
       <v-alert type="warning" :value="true">
         <h2>Safety</h2>
+        <v-divider></v-divider>
         <p>
           <b>
             <em>*Ensure to wear protective equipments.</em>
           </b>
         </p>
         <p>You are dealing with chemicals; wear rubber gloves, nose guards, and lab coats. Ensure your workspace is safe for you and your environment.</p>
+      </v-alert>
+
+      <v-divider></v-divider>
+      <v-alert type="success" :value="true">
+        <h2>Measurement Units.</h2>
+        <v-divider></v-divider>
+        <p>Units of measurement are units used in measuring said materials in Eastern Nigerian markets.</p>
+        <p>
+          More often than not, the units won't be necessary.
+          Just tell the vendor what you want to make and the quantity you want to produce.
+          Eg., if you want to produce 30 litres of liquid soap, just say "I want materials for making 30 litres of liquid soap."
+        </p>
       </v-alert>
     </div>
   </div>
@@ -49,16 +62,19 @@ export default {
     return {
       items: [
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg"
+          src: require("../assets/img/soap-dispenser-2337697_1920.jpg")
         },
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/sky.jpg"
+          src: require("../assets/img/air-freshener.jpg")
         },
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/bird.jpg"
+          src: require("../assets/img/bleach-147520_1280.png")
         },
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/planet.jpg"
+          src: require("../assets/img/car-wash.jpg")
+        },
+        {
+          src: require("../assets/img/disinfectant.jpg")
         }
       ]
     };

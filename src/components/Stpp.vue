@@ -7,7 +7,12 @@
       <v-list-tile-title>
         <slot/>&nbsp; of STPP.
       </v-list-tile-title>
-      <v-list-tile-sub-title>Cleaning agent.</v-list-tile-sub-title>
+      <v-list-tile-sub-title>
+        <div>
+          (Sodium Tripolyphosphate)
+        </div>
+        Cleaning agent.
+        </v-list-tile-sub-title>
     </v-list-tile-content>
   </v-list-tile>
 </template>

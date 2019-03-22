@@ -5,20 +5,17 @@
     </v-list-tile-avatar>
     <v-list-tile-content>
       <v-list-tile-title>
-        <slot/>&nbsp;of Preserver.
+        <slot/>&nbsp;of Datsh.
       </v-list-tile-title>
       <v-list-tile-sub-title>
-        <div>
-        (tablespoon)
-        </div>
-        Preservative.
-        </v-list-tile-sub-title>
+        Insect killer.
+      </v-list-tile-sub-title>
     </v-list-tile-content>
   </v-list-tile>
 </template>
 
 <script>
 export default {
-  name: "Preserver"
+  name: "Datsh"
 };
 </script>

@@ -12,6 +12,6 @@
 <script>
 export default {
   name: "Route",
-  props: ["url", "title"]
+  props: ["url", "title"],
 };
 </script>
