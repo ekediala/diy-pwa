@@ -78,7 +78,7 @@ export default {
           src: require("../assets/img/air-freshener.jpg")
         },
         {
-          src: require("../assets/img/bleach-147520.svg")
+          src: require("../assets/img/bleach-147520_1280.png")
         },
         {
           src: require("../assets/img/car-wash.jpg")

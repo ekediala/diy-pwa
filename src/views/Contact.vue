@@ -37,6 +37,23 @@
         </form>
       </v-card-text>
     </v-card>
+    <div class="text-xs-center">
+      <v-dialog v-model="dialog" width="500">
+        <v-card>
+          <v-card-title class="headline" primary-title>
+            <div style="margin: auto">DIY App</div>
+          </v-card-title>
+          <v-divider></v-divider>
+          <v-card-text>{{ dialogText }}</v-card-text>
+
+          <v-divider></v-divider>
+
+          <v-card-actions>
+            <v-btn style="margin: auto" color="primary" round @click="dialog = false">OK.</v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-dialog>
+    </div>
   </div>
 </template>
 
@@ -49,6 +66,8 @@ export default {
       email: "",
       message: "",
       loading: false,
+      dialog: false,
+      dialogText: "",
       error: {
         name: false,
         email: false,
@@ -70,7 +89,7 @@ export default {
         this.error.name = false;
       }
 
-      if (!this.validateEmail(this.email.replace(/ /g,''))) {
+      if (!this.validateEmail(this.email.replace(/ /g, ""))) {
         this.error.email = true;
         return false;
       } else {
@@ -104,12 +123,14 @@ export default {
         emailjs
           .send("gmail", "template_mGoqNyJv", templateParams)
           .then(() => {
-            alert("Message sent. We'll get back to you shortly");
+            this.dialogText = "Message sent! We'll get back to you shortly";
             this.loading = false;
+            this.dialog = true;
           })
           .catch(() => {
-            alert("Message send failed. Please try again");
+            this.dialogText = "Message send failed! Please try again";
             this.loading = false;
+            this.dialog = true;
           });
       }
       return false;

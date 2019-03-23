@@ -3,7 +3,7 @@
     <template v-slot:image>
       <div>
         <img
-          src="../assets/img/bleach-147520.svg"
+          src="../assets/img/bleach-147520_1280.png"
           alt="Bleach Making image"
         >
       </div>
