@@ -57,6 +57,10 @@ export default {
     };
   },
 
+  mounted() {
+    window.scrollTo(0, 0);
+  },
+
   methods: {
     validate() {
       if (this.name.length <= 0) {
@@ -66,7 +70,7 @@ export default {
         this.error.name = false;
       }
 
-      if (!this.validateEmail(this.email)) {
+      if (!this.validateEmail(this.email.replace(/ /g,''))) {
         this.error.email = true;
         return false;
       } else {

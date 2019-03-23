@@ -2,20 +2,16 @@
   <recipe recipe="Liquid Soap Making">
     <template v-slot:image>
       <div>
-        <img
-          src="../assets/img/soap-dispenser-2337697_1920.jpg"
-          alt="Liquid Soap making"
-        >
+        <img src="../assets/img/liquid-soap-154014.svg" alt="Liquid Soap making">
       </div>
     </template>
     <template v-slot:credits>
-      <div>
-        Image by
+      <div>Image by
         <a
-          href="https://pixabay.com/users/congerdesign-509903/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2337697"
-        >congerdesign</a> from
+          href="https://pixabay.com/users/OpenClipart-Vectors-30363/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=154014"
+        >OpenClipart-Vectors</a> from
         <a
-          href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2337697"
+          href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=154014"
         >Pixabay</a>
       </div>
     </template>

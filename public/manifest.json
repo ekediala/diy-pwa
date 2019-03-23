@@ -1,6 +1,7 @@
 {
   "name": "DIY App",
-  "short_name": "DIY",
+  "short_name": "DIY App",
+  "description": "Make the regular stuff you use at home yourself.",
   "icons": [{
       "src": "\/android-icon-36x36.png",
       "sizes": "36x36",
@@ -36,6 +37,11 @@
       "sizes": "192x192",
       "type": "image\/png",
       "density": "4.0"
+    },
+    {
+      "src": "\/android-icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image\/png"
     }
   ],
   "start_url": "/",

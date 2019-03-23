@@ -15,7 +15,6 @@ h3 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: bolder;
   font-size: 20px;
-  font-style: oblique;
   color: darkcyan;
 }
 </style>

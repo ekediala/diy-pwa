@@ -1,6 +1,8 @@
 <template>
-  <v-alert style="color: black" type="warning" :value="true">
-    <h3 class="headline">Precautions.</h3>
+  <v-alert color="darkcyan" style="color: black" type="warning" :value="true">
+    <h3 class="headline">
+      <b>Precautions.</b>
+    </h3>
     <v-divider></v-divider>
     <ul>
       <li>
@@ -33,7 +35,7 @@
             <em>
               By proceeding with the procedures below, you agree you are responsible for your safety,
               and also that any loss / liability incurred is completely your responsibility. We do
-              not offer any guarantees on the correctness of the procedures listed below.
+              not offer any guarantees on the correctness / safety of the procedures listed below.
             </em>
           </b>
         </p>

@@ -11,13 +11,13 @@
 
       <v-spacer></v-spacer>
       <v-toolbar-items>
-        <v-btn target="_blank" href="https://twitter.com/DialaEke" icon>
+        <v-btn rel="noopener noreferrer" target="_blank" href="https://twitter.com/DialaEke" icon>
           <v-icon>fab fa-twitter</v-icon>
         </v-btn>
-        <v-btn target="_blank" href="https://facebook.com/ekeenyinnayadiala" icon>
+        <v-btn rel="noopener noreferrer" target="_blank" href="https://facebook.com/ekeenyinnayadiala" icon>
           <v-icon>fab fa-facebook</v-icon>
         </v-btn>
-        <v-btn target="_blank" href="https://ng.linkedin.com/in/eke-diala-enyinnaya-a0906752" icon>
+        <v-btn rel="noopener noreferrer" target="_blank" href="https://ng.linkedin.com/in/eke-diala-enyinnaya-a0906752" icon>
           <v-icon>fab fa-linkedin</v-icon>
         </v-btn>
       </v-toolbar-items>

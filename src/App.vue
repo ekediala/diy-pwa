@@ -6,7 +6,6 @@
         v-model="snackWithButtons"
         :timeout="timeout"
         bottom
-        left
         class="snack"
       >
         {{ snackWithBtnText }}
@@ -71,7 +70,7 @@ export default {
       // to an app update being available.
       // The new service worker is installed, but not yet active.
       // Store the ServiceWorkerRegistration instance for later use.
-      // this.registration = e.detail;
+      this.registration = e.detail;
       this.snackBtnText = 'Refresh';
       this.snackWithBtnText = 'New version available!';
       this.snackWithButtons = true;

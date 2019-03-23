@@ -9,12 +9,22 @@
       </v-card-title>
       <v-divider></v-divider>
       <v-card-text>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed architecto repudiandae, aperiam amet quod, error optio ipsam unde praesentium magni explicabo sequi ducimus veritatis totam, aliquid nihil soluta tenetur similique.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis doloribus ipsum, architecto ipsa pariatur dolor, enim totam alias harum praesentium nesciunt culpa iusto aut expedita fugiat dolorum provident a nulla.</p>
+        <p>
+          A good home is a healthy home. A healthy home undergoes proper house-keeping.
+          House-keeping is not for the faint of hearts.
+          It requires the dedicated labour and the right materials.
+          The right materials don’t always come cheap, but are important.
+          Cleaning agents such as soap and bleach should always be available in a healthy home—we don’t run out of things to wash.
+          Disinfectants and insecticides help keep the germs and pests away.
+          Air fresheners and perfumes ensure no offensive smells linger.
+        </p>
 
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic quibusdam esse repellendus, voluptate mollitia velit magnam excepturi reprehenderit molestias ipsam omnis, at quae sint quo nesciunt delectus ullam, maxime similique.</p>
-
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, esse saepe molestiae, sunt exercitationem, officiis illum fuga natus possimus enim numquam tempora aliquam. Officiis ipsa libero soluta minus molestias doloribus.</p>
+        <p>
+          However, keeping up with an abundant monthly supply of these materials could overwhelm a person on a lean budget.
+          That’s where DIY comes in. In clear and simple steps, the process of making the house-keeping materials have been detailed.
+          Not only are they cheaper to make, you also get to choose the concentration yourself.
+          Everything made to your taste. Navigate through our page and see how they are done.
+        </p>
       </v-card-text>
     </v-card>
     <v-divider></v-divider>
@@ -62,13 +72,13 @@ export default {
     return {
       items: [
         {
-          src: require("../assets/img/soap-dispenser-2337697_1920.jpg")
+          src: require("../assets/img/liquid-soap-154014.svg")
         },
         {
           src: require("../assets/img/air-freshener.jpg")
         },
         {
-          src: require("../assets/img/bleach-147520_1280.png")
+          src: require("../assets/img/bleach-147520.svg")
         },
         {
           src: require("../assets/img/car-wash.jpg")
@@ -78,6 +88,9 @@ export default {
         }
       ]
     };
+  },
+  mounted() {
+    window.scrollTo(0, 0);
   }
 };
 </script>
