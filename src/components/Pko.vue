@@ -1,7 +1,7 @@
 <template>
   <v-list-tile avatar>
     <v-list-tile-avatar>
-      <img class="avatar" src="../assets/img/pko.jpg">
+      <img class="avatar" src="../assets/img/pko.svg">
     </v-list-tile-avatar>
     <v-list-tile-content>
       <v-list-tile-title><slot/>&nbsp;of PKO</v-list-tile-title>

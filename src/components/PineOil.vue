@@ -1,7 +1,7 @@
 <template>
   <v-list-tile avatar>
     <v-list-tile-avatar>
-      <img class="avatar" src="../assets/img/pine-oil.jpg">
+      <img class="avatar" src="../assets/img/pine-oil.svg">
     </v-list-tile-avatar>
     <v-list-tile-content>
       <v-list-tile-title>
