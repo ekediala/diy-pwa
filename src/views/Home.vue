@@ -1,6 +1,6 @@
 <template>
   <div class="text-xs-center">
-    <v-carousel height="300">
+    <v-carousel id="carousel" :height="height">
       <v-carousel-item v-for="(item,i) in items" :key="i" :src="item.src"></v-carousel-item>
     </v-carousel>
     <v-card>
@@ -78,9 +78,6 @@ export default {
           src: require("../assets/img/air-freshener.jpg")
         },
         {
-          src: require("../assets/img/bleach-147520.svg")
-        },
-        {
           src: require("../assets/img/car-wash.jpg")
         },
         {
@@ -89,8 +86,29 @@ export default {
       ]
     };
   },
+  computed: {
+    height(){
+      let mobile = 300;
+      let nMobile = 500;
+      if (window.innerWidth < 768){
+        return mobile;
+      } else {
+        return nMobile;
+      }
+    }
+  },
   mounted() {
     window.scrollTo(0, 0);
+    console.log(window.innerWidth);
   }
 };
 </script>
+
+<style scoped>
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+    v-carousel#carousel{
+      height: 300;
+    }
+  }
+</style>
+

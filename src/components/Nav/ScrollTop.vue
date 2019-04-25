@@ -1,28 +1,21 @@
 <template>
-    <div>
-         <v-btn
-              color="pink"
-              bottom
-              right
-              fab
-              @click="scrollToTop"
-              id="myBtn"
-            >
-              <v-icon>keyboard_arrow_up</v-icon>
-            </v-btn>
-    </div>
+  <div>
+    <v-btn color="pink" bottom right fab @click="scrollToTop" id="myBtn">
+      <v-icon>keyboard_arrow_up</v-icon>
+    </v-btn>
+  </div>
 </template>
 
 <script>
 require('../../scroll.js');
 export default {
-    name: 'ScrollTop',
-    methods: {
-        scrollToTop(){
-            window.scrollTo(0, 0);
-        }
-    }
-}
+  name: 'ScrollTop',
+  methods: {
+    scrollToTop() {
+      window.scrollTo(0, 0);
+    },
+  },
+};
 </script>
 
 <style scoped>
