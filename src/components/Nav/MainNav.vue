@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-navigation-drawer app fixed v-model="showMenu">
-      <routes @toggleMenu="toggleMenu"/>
+      <routes @toggleMenu="toggleMenu" />
     </v-navigation-drawer>
 
     <v-toolbar scroll-off-screen app>
@@ -11,13 +11,28 @@
 
       <v-spacer></v-spacer>
       <v-toolbar-items>
-        <v-btn rel="noopener noreferrer" target="_blank" href="https://twitter.com/DialaEke" icon>
+        <v-btn
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://twitter.com/DialaEke"
+          icon
+        >
           <v-icon>fab fa-twitter</v-icon>
         </v-btn>
-        <v-btn rel="noopener noreferrer" target="_blank" href="https://facebook.com/ekeenyinnayadiala" icon>
+        <v-btn
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://facebook.com/ekeenyinnayadiala"
+          icon
+        >
           <v-icon>fab fa-facebook</v-icon>
         </v-btn>
-        <v-btn rel="noopener noreferrer" target="_blank" href="https://ng.linkedin.com/in/eke-diala-enyinnaya-a0906752" icon>
+        <v-btn
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://ng.linkedin.com/in/eke-diala-enyinnaya-a0906752"
+          icon
+        >
           <v-icon>fab fa-linkedin</v-icon>
         </v-btn>
       </v-toolbar-items>
@@ -26,22 +41,22 @@
 </template>
 
 <script>
-import Routes from "./Routes";
+import Routes from './Routes';
 export default {
-  name: "MainNav",
+  name: 'MainNav',
   components: {
-    Routes
+    Routes,
   },
   data() {
     return {
-      showMenu: null
+      showMenu: null,
     };
   },
 
   methods: {
     toggleMenu() {
       this.showMenu = !this.showMenu;
-    }
+    },
   },
 
   computed: {
@@ -49,7 +64,7 @@ export default {
       const d = new Date();
       const yr = d.getFullYear();
       return yr;
-    }
-  }
+    },
+  },
 };
 </script>

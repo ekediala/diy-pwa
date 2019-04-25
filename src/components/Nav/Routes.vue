@@ -24,28 +24,34 @@
       </v-list-tile-content>
     </v-list-tile>
 
-    <route url="/liquid-soap-making" title="Liquid Soap Making."/>
-    <route url="/whitener-making" title="Bleach Making (Whitener)."/>
-    <route url="/car-wash-liquid" title="Car Wash Liquid ."/>
-    <route url="/water-air-freshener" title="Air freshener (Water based) Making."/>
-    <route url="/alcohol-air-freshener" title="Air freshener (Alcohol based)."/>
-    <route url="/disinfectant-making" title="Disinfectant Making."/>
-    <route url="/perfume-making" title="Perfume Making."/>
-    <route url="/tile-cleaner-making" title="Tile cleaner Making."/>
-    <route url="/detergent-making" title="Detergent Making."/>
-    <route url="/insecticide-making" title="Insecticide Making."/>
+    <route url="/liquid-soap-making" title="Liquid Soap Making." />
+    <route url="/whitener-making" title="Bleach Making (Whitener)." />
+    <route url="/car-wash-liquid" title="Car Wash Liquid ." />
+    <route
+      url="/water-air-freshener"
+      title="Air freshener (Water based) Making."
+    />
+    <route
+      url="/alcohol-air-freshener"
+      title="Air freshener (Alcohol based)."
+    />
+    <route url="/disinfectant-making" title="Disinfectant Making." />
+    <route url="/perfume-making" title="Perfume Making." />
+    <route url="/tile-cleaner-making" title="Tile cleaner Making." />
+    <route url="/detergent-making" title="Detergent Making." />
+    <route url="/insecticide-making" title="Insecticide Making." />
   </v-list>
 </template>
 
 <script>
-import Route from "./Route";
+import Route from './Route';
 export default {
-  name: "Routes",
+  name: 'Routes',
   components: { Route },
   methods: {
-      toggleMenu(){
-          this.$emit('toggleMenu');
-      }
+    toggleMenu() {
+      this.$emit('toggleMenu');
+    },
   },
 };
 </script>

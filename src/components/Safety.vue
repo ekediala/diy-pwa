@@ -3,8 +3,8 @@
     <li>
       <p>Please read safety precautions above,
         <router-link
-          to="/#alert"
-        >our safety procedures and disclaimer before proceeding as we won't be liable for any loss, health or otherwise.</router-link>
+          to="/#diy-alert"
+        >our safety procedures and disclaimer</router-link> before proceeding as we won't be liable for any loss, health or otherwise.
       </p>
     </li>
   </div>

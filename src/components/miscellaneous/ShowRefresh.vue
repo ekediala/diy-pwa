@@ -18,8 +18,8 @@
 
 <script>
 export default {
-    name: 'ShowRefresh',
-    data() {
+  name: 'ShowRefresh',
+  data() {
     return {
       refreshing: false,
       registration: null,
@@ -29,7 +29,7 @@ export default {
       timeout: 0,
     };
   },
-  created () {
+  created() {
     // Listen for swUpdated event and display refresh snackbar as required.
     document.addEventListener('swUpdated', this.showRefreshUI, { once: true });
     // Refresh all open app tabs when a new service worker is installed.
@@ -41,7 +41,7 @@ export default {
   },
 
   methods: {
-    showRefreshUI (e) {
+    showRefreshUI(e) {
       // Display a snackbar inviting the user to refresh/reload the app due
       // to an app update being available.
       // The new service worker is installed, but not yet active.
@@ -51,14 +51,16 @@ export default {
       this.snackWithBtnText = 'New version available!';
       this.snackWithButtons = true;
     },
-    refreshApp () {
+    refreshApp() {
       this.snackWithButtons = false;
       // Protect against missing registration.waiting.
-      if (!this.registration || !this.registration.waiting) { return; }
+      if (!this.registration || !this.registration.waiting) {
+        return;
+      }
       this.registration.waiting.postMessage('skipWaiting');
     },
   },
-}
+};
 </script>
 
 <style scoped>

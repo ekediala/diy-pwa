@@ -1,7 +1,11 @@
 <template>
   <div>
     <v-card class="text-xs-center diy">
-      <v-img contain height="250" :src="require('../assets/img/about.jpg')"></v-img>
+      <v-img
+        contain
+        height="250"
+        :src="require('../assets/img/about.jpg')"
+      ></v-img>
 
       <v-divider></v-divider>
 
@@ -17,17 +21,18 @@
         <v-container>
           <v-layout row wrap>
             <v-flex></v-flex>
-            <v-flex>
+            <v-flex id="about">
               <p>
-                Hey guys, my name is Eke Enyinnaya Diala.
-                I am a web and hybrid mobile app developer.
-                This is my first personal project.
-                It was built with Vue and Vuetify mainly.
-                There are more to come.
+                Hey guys, my name is Eke Enyinnaya Diala. I am a web and hybrid
+                mobile app developer. This is my first personal project. It was
+                built with Vue and Vuetify mainly. Click 'Add to home screen'
+                and you'd be able to use it as a mobile app with or without
+                internet access.
               </p>
               <p>
-                The information contained in any project of mine is free to use in whatever
-                way you deem necessary. (I hope you choose to do good with them).
+                The information contained in any project of mine is free to use
+                in whatever way you deem necessary. (I hope you choose to do
+                good with them).
               </p>
 
               <p>
@@ -36,15 +41,22 @@
                   rel="noopener noreferrer"
                   href="http://twitter.com/ZenasUbere"
                   target="_blank"
-                >@ZenasUbere</a> ) soon.
-                There I will share the knowledge gained from each project
-                and he will do what he likes to do: write.
-                The source code will be available to download for free of course.
-                I hope this serves a purpose for you.
+                  >@ZenasUbere</a
+                >
+                ) soon. There I will share the knowledge gained from each
+                project and he will do what he likes to do: write. The source
+                code will be available to download for free of course. I hope
+                this serves a purpose for you.
               </p>
-              <p>Below (as below so above.) are my social media handles if you need to get in touch.</p>
-              <p>You can also
-                <router-link to="/contact">leave me a message here.</router-link>
+              <p>
+                Below (as below so above.) are my social media handles if you
+                need to get in touch.
+              </p>
+              <p>
+                You can also
+                <router-link to="/contact"
+                  >leave me a message here.</router-link
+                >
               </p>
               <p>Have fun.</p>
             </v-flex>
@@ -53,7 +65,12 @@
         <v-divider></v-divider>
         <div>
           <h3>Social</h3>
-          <v-btn rel="noopener noreferrer" target="_blank" href="https://twitter.com/DialaEke" icon>
+          <v-btn
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://twitter.com/DialaEke"
+            icon
+          >
             <v-icon>fab fa-twitter</v-icon>
           </v-btn>
           <v-btn
@@ -80,23 +97,24 @@
 
 <script>
 export default {
-  name: "About",
+  name: 'About',
   mounted() {
     window.scrollTo(0, 0);
-  }
+  },
 };
 </script>
 
 <style scoped>
 .diy {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 @media only screen and (min-device-width: 800px) {
   v-img {
     height: 100;
   }
 }
+
+#about {
+  text-align: justify;
+}
 </style>
-
-
-

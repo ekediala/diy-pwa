@@ -28,7 +28,7 @@
               <slot name="precaution"/>
             </v-flex>
           </v-layout>
-          <br>
+          
           <v-layout row wrap>
             <v-flex>
               <procedure-header/>

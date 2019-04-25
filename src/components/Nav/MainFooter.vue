@@ -19,12 +19,12 @@
 
 <script>
 export default {
-  name: "MainFooter",
+  name: 'MainFooter',
   computed: {
     year() {
       let d = new Date();
       return d.getFullYear();
-    }
-  }
+    },
+  },
 };
 </script>

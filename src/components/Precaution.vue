@@ -1,51 +1,56 @@
 <template>
-  <v-alert color="darkcyan" style="color: black" type="warning" :value="true">
-    <h3 class="headline">
-      <b>Precautions.</b>
-    </h3>
-    <v-divider></v-divider>
-    <ul>
-      <li>
-        <p>
-          <b>
+  <div>
+    <v-alert
+      class="alert"
+      color="darkcyan"
+      :value="true"
+    >
+      <h3 class="headline">
+        <b>Precautions</b>
+      </h3>
+      <v-divider></v-divider>
+      <ul class="align-justify">
+        <li>
+          <p>
             <em>
-              <slot/>
+              <slot />
             </em>
-          </b>
-        </p>
-      </li>
+          </p>
+        </li>
 
-      <li>
-        <p>
-          <b>
+        <li>
+          <p>
             <em>*Ensure to wear protective equipments.</em>
-          </b>
-        </p>
-        <p>
-          <b>
-            <em>You are dealing with chemicals; wear safety gloves, nose guards, laboratory coats, etc.
-              <br>Ensure your workspace is safe for you and your environment.
-            </em>
-          </b>
-        </p>
-      </li>
-      <li>
-        <p>
-          <b>
+          </p>
+          <p>
             <em>
-              By proceeding with the procedures below, you agree you are responsible for your safety,
-              and also that any loss / liability incurred is completely your responsibility. We do
-              not offer any guarantees on the correctness / safety of the procedures listed below.
+              You are dealing with chemicals; wear safety gloves, nose guards,
+              laboratory coats, etc. <br />Ensure your workspace is safe for you
+              and your environment.
             </em>
-          </b>
-        </p>
-      </li>
-    </ul>
-  </v-alert>
+          </p>
+        </li>
+        <li>
+          <p>
+            <em>
+              By proceeding with the procedures below, you agree you are
+              responsible for your safety, and also that any loss / liability
+              incurred is completely your responsibility. We do not offer any
+              guarantees on the correctness / safety of the procedures listed
+              below.
+            </em>
+          </p>
+        </li>
+      </ul>
+    </v-alert>
+  </div>
 </template>
 
 <script>
 export default {
-  name: "Precaution"
+  name: 'Precaution',
 };
 </script>
+
+<style src="../assets/css/alert.css" scoped>
+</style>
