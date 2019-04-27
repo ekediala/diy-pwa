@@ -29,7 +29,7 @@
         >
           However, keeping up with an abundant monthly supply of these materials
           could overwhelm a person on a lean budget. That’s where DIY comes in.
-          In clear and simple steps, the process of making the house-keeping
+          In clear and simple steps, the processes of making the house-keeping
           materials have been detailed. Not only are they cheaper to make, you
           also get to choose the concentration yourself. Everything made to your
           taste. Navigate through our page and see how they are done.
@@ -42,7 +42,7 @@
         <v-divider></v-divider>
         <br />
         <p class="align-justify">
-          By proceeding with the procedures below, you agree you are responsible
+          By proceeding with the procedures in this tutorial, you agree you are responsible
           for your safety, and also, that any loss / liability incurred is
           completely your responsibility. We do not offer any guarantees on the
           correctness of the procedures.

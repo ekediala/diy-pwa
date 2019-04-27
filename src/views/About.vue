@@ -41,7 +41,7 @@
                   rel="noopener noreferrer"
                   href="http://twitter.com/ZenasUbere"
                   target="_blank"
-                  >@ZenasUbere</a
+                  >@ZenasUbere </a
                 >
                 ) soon. There I will share the knowledge gained from each
                 project and he will do what he likes to do: write. The source
