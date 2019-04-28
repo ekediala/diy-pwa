@@ -7,4 +7,5 @@
 
 .align-justify {
     text-align: justify;
+    hyphens: auto;
 }

@@ -14,5 +14,6 @@ export default {
 <style scoped>
 ul {
   text-align:justify;
+  hyphens: auto;
 }
 </style>
