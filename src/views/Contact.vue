@@ -121,7 +121,7 @@ export default {
         };
 
         emailjs
-          .send("gmail", "template_mGoqNyJv", templateParams)
+          .send("default_service", "template_mGoqNyJv_clone", templateParams)
           .then(() => {
             this.dialogText = "Message sent! We'll get back to you shortly";
             this.loading = false;
